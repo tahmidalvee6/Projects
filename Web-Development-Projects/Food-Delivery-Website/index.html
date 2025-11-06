@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodExpress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--  HEADER  -->
+  <header>
+    <div class="logo">FoodExpress</div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#services" class="nav-link">Reviews</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><button id="authBtn">Sign In</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--  HOME SECTION  -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Delicious Food Delivered Fast</h1>
+      <p>
+        Hot meals from your favourite kitchens, straight to your doorstep. Explore our variety of dishes, 
+        from burgers and pizza to sushi and desserts. Order now and enjoy fast delivery and fresh ingredients!
+      </p>
+      <a href="#menu" class="btn">Order Now</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://img.freepik.com/free-photo/positive-deliveryman-with-pizza-boxes_273609-31436.jpg?semt=ais_hybrid&w=740&q=80" alt="Delicious Food">
+    </div>
+  </section>
+
+  <!--  MENU SECTION  -->
+  <section id="menu" class="menu-section">
+    <h2 class="section-title">Our Menu</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://media.istockphoto.com/id/617364554/photo/hamburger-with-fries.jpg?s=612x612&w=0&k=20&c=t8fMIRewNFRU7YSMNWIx2axoyZNjsh0cxHM4vYMALf8=" alt="Cheese Burger">
+        <h3>Cheese Burger</h3>
+        <p>$5.99</p>
+        <button onclick="addToCart('Cheese Burger', 5.99)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://media.istockphoto.com/id/842082336/photo/homemade-veggie-pizza-with-mushrooms-peppers.jpg?s=612x612&w=0&k=20&c=op1vZnGjlB_c3w6Z-ohPo0wn4QveujVKZu4vTZCOWnc=" alt="Veggie Pizza">
+        <h3>Veggie Pizza</h3>
+        <p>$8.99</p>
+        <button onclick="addToCart('Veggie Pizza', 8.99)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://media.istockphoto.com/id/168663653/photo/d%C3%B6ner-kebap-chicken-salad-sandwich-wrap.jpg?s=612x612&w=0&k=20&c=mnnVcAyaPV9DRC_RuyWB1CmUJmCZU0qgcs0czHxU5Tk=" alt="Chicken Wrap">
+        <h3>Chicken Wrap</h3>
+        <p>$6.99</p>
+        <button onclick="addToCart('Chicken Wrap', 6.99)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://t3.ftcdn.net/jpg/01/61/55/02/360_F_161550211_IqOeFrErbZT0hjm4juDLanWCiVVEJLLR.jpg" alt="Sushi Set">
+        <h3>Sushi Set</h3>
+        <p>$12.99</p>
+        <button onclick="addToCart('Sushi Set', 12.99)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://hips.hearstapps.com/thepioneerwoman/wp-content/uploads/2016/04/one-pot-broccoli-alfredo-pasta-01.jpg?crop=0.8893333333333334xw:1xh;center,top&resize=1200:*" alt="Pasta Alfredo">
+        <h3>Pasta Alfredo</h3>
+        <p>$7.99</p>
+        <button onclick="addToCart('Pasta Alfredo', 7.99)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJy7e7FNp7D3XHt8SSWKZyej_gLn9u60YFFQ&s" alt="Grilled Salmon">
+      <h3>Grilled Salmon</h3>
+      <p>$14.99</p>
+      <button onclick="addToCart('Grilled Salmon', 14.99)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Caesar_salad_%282%29.jpg/1200px-Caesar_salad_%282%29.jpg" alt="Caesar Salad">
+      <h3>Caesar Salad</h3>
+      <p>$6.49</p>
+      <button onclick="addToCart('Caesar Salad', 6.49)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/easy_chocolate_cake_31070_16x9.jpg" alt="Chocolate Cake">
+      <h3>Chocolate Cake</h3>
+      <p>$4.99</p>
+      <button onclick="addToCart('Chocolate Cake', 4.99)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://media.gettyimages.com/id/155431877/photo/barbecue-ribs.jpg?s=612x612&w=gi&k=20&c=2cZuklqc-OdG_q1f48UP2VJbEVy_BXLxxGI2hCjC5_g=" alt="BBQ Ribs">
+      <h3>BBQ Ribs</h3>
+      <p>$13.99</p>
+      <button onclick="addToCart('BBQ Ribs', 13.99)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://media.istockphoto.com/id/452813985/photo/plate-of-fried-chicken-on-blue-plaid-towel.jpg?s=612x612&w=0&k=20&c=e_03DvZFXhvbMR5eBiflKJ2nnQnoaBnufrT37h6Wf7s=" alt="Fried Chicken">
+      <h3>Fried Chicken</h3>
+      <p>$9.99</p>
+      <button onclick="addToCart('Fried Chicken', 9.99)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX2w-6ljxAJtEImAJ4zBsRnou1CoSAVmgvQw&s" alt="Margherita Pizza">
+      <h3>Margherita Pizza</h3>
+      <p>$8.49</p>
+      <button onclick="addToCart('Margherita Pizza', 8.49)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://media.istockphoto.com/id/535786572/photo/grilled-striploin-steak.jpg?s=612x612&w=0&k=20&c=F_vrvwIOWe3vBR2y16Dp4z6d46K1sIY3togU3VYjrpA=" alt="Beef Steak">
+      <h3>Beef Steak</h3>
+      <p>$15.99</p>
+      <button onclick="addToCart('Beef Steak', 15.99)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://s.lightorangebean.com/media/20240918152247/One-Pot-Lemon-Garlic-Shrimp-Pasta_-done.jpg" alt="Shrimp Pasta">
+      <h3>Shrimp Pasta</h3>
+      <p>$11.99</p>
+      <button onclick="addToCart('Shrimp Pasta', 11.99)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqZpDMhUYt03BTSLnSVakww7mZFkUp09PAnw&s" alt="Taco Platter">
+      <h3>Taco Platter</h3>
+      <p>$10.99</p>
+      <button onclick="addToCart('Taco Platter', 10.99)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjZpzzrkJumEOAbhTfbhWIHjloi2Pm9Xeyw&s" alt="Sushi Deluxe">
+      <h3>Sushi Deluxe</h3>
+      <p>$16.99</p>
+      <button onclick="addToCart('Sushi Deluxe', 16.99)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnJTIwYnVyZ2VyfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000" alt="Veg Burger">
+      <h3>Veg Burger</h3>
+      <p>$5.49</p>
+      <button onclick="addToCart('Veg Burger', 5.49)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://media.istockphoto.com/id/1648267946/photo/greek-salad-with-olives-at-white.jpg?s=612x612&w=0&k=20&c=7jC_FsH0oxDZRhr4YrgHCBR5gY4clSQzSbVVqcprZG0=" alt="Greek Salad">
+      <h3>Greek Salad</h3>
+      <p>$6.99</p>
+      <button onclick="addToCart('Greek Salad', 6.99)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://www.allrecipes.com/thmb/PKh_MtthZMtG1flNmud0MNgRK7w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/13096-Cream-of-Mushroom-Soup-ddmfs-4x3-293-b505e37374d74e81807e8a93bcdd7bab.jpg" alt="Mushroom Soup">
+      <h3>Mushroom Soup</h3>
+      <p>$4.49</p>
+      <button onclick="addToCart('Mushroom Soup', 4.49)">Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUbsCyHzLR5852-00nQwmKvnKXZyfitgP3mg&s" alt="Ice Cream Sundae">
+      <h3>Ice Cream Sundae</h3>
+      <p>$3.99</p>
+      <button onclick="addToCart('Ice Cream Sundae', 3.99)">Add to Cart</button>
+    </div>
+    </div>
+  </section>
+
+  <!--  REVIEWS SECTION  -->
+  <section id="services" class="services-section">
+  <h2 class="section-title">Customer Reviews</h2>
+  <div class="reviews-container">
+    <div class="review-card">
+      <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?crop=entropy&cs=tinysrgb&fit=crop&w=100&h=100&q=80" alt="Customer 5">
+      <h3>Chris Lee</h3>
+      <p>"Friendly service, prompt delivery, and great quality food."</p>
+    </div>
+    <div class="review-card">
+        <img src="https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?crop=entropy&cs=tinysrgb&fit=crop&w=100&h=100&q=80" alt="Customer 10">
+        <h3>David Brown</h3>
+        <p>"Excellent service and tasty meals! I always order from FoodExpress."</p>
+    </div>
+    <div class="review-card">
+      <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=crop&w=100&h=100&q=80" alt="Customer 3">
+      <h3>Mike Johnson</h3>
+      <p>"Best food delivery experience. Highly recommend FoodExpress!"</p>
+    </div>
+    <div class="review-card">
+      <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?crop=entropy&cs=tinysrgb&fit=crop&w=100&h=100&q=80" alt="Customer 4">
+      <h3>Emily Davis</h3>
+      <p>"Fresh and tasty meals every time. The app is very easy to use."</p>
+    </div>
+    <div class="review-card">
+      <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?crop=entropy&cs=tinysrgb&fit=crop&w=100&h=100&q=80" alt="Customer 7">
+      <h3>David Brown</h3>
+      <p>"Excellent service! The food was delivered faster than expected and was delicious."</p>
+    </div>
+    <div class="review-card">
+      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=crop&w=100&h=100&q=80" alt="Customer 6">
+      <h3>Sarah Wilson</h3>
+      <p>"I love the dessert options. Everything is always perfect."</p>
+    </div>
+  </div>
+  </section>
+
+  <!--  ABOUT SECTION  -->
+  <section id="about" class="about-section">
+    <h2 class="section-title">About Us</h2>
+    <div class="about-content">
+
+      <div class="about-text">
+        <h3>Welcome to <strong>FoodExpress</strong>!</h3>
+        <p>
+          At <strong>FoodExpress</strong>, we believe that food is more than just a meal – it's an experience. 
+          Our passion is bringing fresh, delicious meals right to your doorstep, prepared with love and high-quality ingredients.
+        </p>
+        <p>
+          From classic favorites like burgers, pizzas, and pastas to gourmet dishes like sushi and exotic salads, 
+          we cater to every craving. Our mission is simple: <strong>fast delivery, exceptional taste, and happy customers.</strong>
+        </p>
+        <p>
+          Join our community of food lovers and let <strong>FoodExpress</strong> make every meal a delightful moment!
+        </p>
+      </div>
+
+      <div class="about-image">
+        <img src="https://t3.ftcdn.net/jpg/06/02/18/04/360_F_602180438_jDGWHRbPmJHfwUhs7hlCGN5wuXZoXFek.jpg" alt="About FoodExpress">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+  <h2 class="section-title">Contact Us</h2>
+  <div class="contact-container">
+
+   
+    <div class="contact-image">
+      <img src="https://www.shutterstock.com/image-photo/using-laptop-show-icon-address-600nw-2521386695.jpg" alt="Contact Us">
+    </div>
+
+    
+    <form id="contactForm" class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+<!-- CONTACT SUCCESS MODAL -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Thank You!</h3>
+    <p>Your message has been sent successfully. We will get back to you soon.</p>
+  </div>
+</div>
+
+
+  <!--  CART SECTION  -->
+  <section id="cart" class="cart-section">
+    <div class="cart-container">
+      <h2 class="section-title">Your Cart</h2>
+      <div id="cartItems" class="cart-items">
+      </div>
+      <div class="cart-summary">
+        <p><strong>Total:</strong> $<span id="total">0.00</span></p>
+        <button onclick="checkout()" class="btn-checkout">Checkout</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER  -->
+  <footer>
+    &copy; 2025 FoodExpress. All Rights Reserved.
+  </footer>
+
+  <!--  SCRIPT  -->
+  <script src="script.js"></script>
+</body>
+</html>
