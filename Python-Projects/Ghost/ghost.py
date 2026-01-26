@@ -13,3 +13,8 @@ image = pygame.image.load('Ghost/scr.jpg')
 window.blit(image, (0,0))
 pygame.display.update()
 sleep(2)
+
+
+
+
+
