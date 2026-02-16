@@ -1,6 +1,7 @@
 import cv2
 import sys
 
+
 def detect_faces():
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
     
@@ -52,9 +53,6 @@ def detect_faces():
 
 if __name__ == "__main__":
     detect_faces()
-
-
-
 
 
 
