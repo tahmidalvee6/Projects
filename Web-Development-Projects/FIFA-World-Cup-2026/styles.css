@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+
+header {
+    background: linear-gradient(135deg, #1a0033 0%, #1f15ab 50%, #0d1b5e 100%);
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-block {
+    position: relative;
+    left: 100px;
+    padding-top: 42px;
+}
+
+.nav-block a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 18px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-block a:hover {
+    color: #FFD700;
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 4px;
+}
+
+.login-button {
+    position: relative;
+    right: 124px;
+    padding-top: 42px;
+}
+
+.login-button button {
+    background-color: #E02C6D;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.login-button button:hover { 
+    background-color: #a81f4f; 
+}
+
+
+
+
+.header-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    flex: 1;
+    padding: 0 100px;
+}
+
+.title h1 {
+    font-weight: 1000;
+    font-size: 92px;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    transition: transform 1s ease-in-out, color 1s ease-out;
+}
+
+.title h1:hover {
+    transform: scale(1.05) skewX(5deg) translateX(20px);
+    color: #FFD700;
+}
+
+.hero-sub {
+    color: #FFD700;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.hero-date {
+    color: rgba(255,255,255,0.75);
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 36px;
+}
+
+.hero-btn {
+    background-color: #E02C6D;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 14px 34px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in;
+}
+
+.hero-btn:hover { 
+    background-color: #a81f4f; 
+}
+
+.title-image img{
+    
+    width: 800.01px;
+    height: 700px;
+    position:relative;
+    top: 50px;
+    margin-right: 102px;
+    margin-bottom: 86px;
+    
+}
+.title-image img:hover{
+    transform: rotate(360deg) scale(.3);
+    transition: transform 3s ease-in-out;
+}
+
+
+
+
+
+section { padding: 80px 100px; }
+
+section h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+section h1 span { color: #E02C6D; }
+
+.section-sub {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+.moments-section {
+    background-color: #1a1a2e;
+    padding: 80px 100px;
+}
+
+.moments-section h1    { color: white; }
+.moments-section .section-sub { color: rgba(255,255,255,0.55); }
+
+.moments-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.moment-card {
+    background-color: #0f0f23;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(255,215,0,0.15);
+    box-shadow: 2px 4px 16px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.moment-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(255,215,0,0.2);
+    border-color: #FFD700;
+}
+
+.moment-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.moment-video iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: none;
+}
+
+.moment-info { padding: 14px 16px; }
+
+.moment-info h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFD700;
+    margin-bottom: 4px;
+}
+
+.moment-info p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+}
+
+
+
+
+
+
+.champions-section { background-color: #f4f4f4; }
+
+.champions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-bottom: 22px;
+}
+
+
+.champions-grid-last {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.champions-grid-last .champion-card {
+    grid-column: span 1;
+}
+
+
+.champions-grid-last .champion-card:first-child {
+    grid-column: 2;
+}
+
+.champions-grid-last .champion-card:last-child {
+    grid-column: 3;
+}
+
+.champion-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 3px 12px rgba(0,0,0,0.1);
+    border-top: 4px solid #2D25A0;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.champion-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(45,37,160,0.18);
+}
+
+.champ-year-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #2D25A0, #E02C6D);
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 6px 18px;
+    border-radius: 0 0 14px 14px;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+
+
+.champion-flag-img {
+    width: 100%;
+    height: 110px;
+    overflow: hidden;
+    border-bottom: 3px solid #eee;
+}
+
+.champion-flag-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.champion-card:hover .champion-flag-img img {
+    transform: scale(1.06);
+}
+
+.champion-info {
+    padding: 12px 14px 16px;
+}
+
+.champion-info h3 {
+    font-size: 18px;
+    font-weight: 900;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+}
+
+.champ-host {
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.champ-host i {
+    color: #E02C6D;
+    margin-right: 4px;
+}
+
+.champ-awards {
+    text-align: left;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.champ-awards p {
+    font-size: 11px;
+    color: #555;
+    line-height: 1.9;
+}
+
+.champ-awards p i {
+    color: #FFD700;
+    margin-right: 5px;
+    width: 13px;
+}
+
+.champ-awards p b { color: #1a1a2e; }
+
+
+
+
+
+
+.songs-section {
+    background-color: #1a1a2e;
+    padding: 80px 100px;
+}
+
+.songs-section h1 { color: white; }
+.songs-section .section-sub { color: rgba(255,255,255,0.55); }
+
+.songs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.song-card {
+    background-color: #0f0f23;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(255,215,0,0.15);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.song-card:hover {
+    transform: translateY(-6px);
+    border-color: #FFD700;
+}
+
+.song-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.song-video iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: none;
+}
+
+.song-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+}
+
+.song-rank {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: rgba(255,215,0,0.2);
+    min-width: 52px;
+    text-align: center;
+    line-height: 1;
+}
+
+.song-details h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.song-artist {
+    font-size: 12px;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 2px;
+}
+
+.song-artist i { color: #E02C6D; margin-right: 5px; }
+
+.song-year {
+    font-size: 11px;
+    color: #FFD700;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+.legends-section { background-color: #f4f4f4; }
+
+.legends-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 22px;
+}
+
+.legend-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 3px 12px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.legend-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 36px rgba(45,37,160,0.18);
+}
+
+.legend-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background-color: #1a1a2e;
+}
+
+.legend-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.legend-card:hover .legend-image img {
+    transform: scale(1.07);
+}
+
+.legend-info {
+    padding: 12px 12px 14px;
+    background: linear-gradient(180deg, #1a1a2e 0%, #0d0d1e 100%);
+}
+
+.legend-info h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #FFD700;
+    margin-bottom: 3px;
+}
+
+.legend-country {
+    font-size: 10px;
+    color: rgba(255,255,255,0.5);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.legend-stats {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+.lstat {
+    text-align: center;
+    flex: 1;
+    background: rgba(255,255,255,0.05);
+    border-radius: 5px;
+    padding: 5px 3px;
+}
+
+.lnum {
+    display: block;
+    font-size: 17px;
+    font-weight: 900;
+    color: #E02C6D;
+    line-height: 1.1;
+}
+
+.llabel {
+    display: block;
+    font-size: 8px;
+    color: rgba(255,255,255,0.4);
+    margin-top: 2px;
+}
+
+.legend-era {
+    font-size: 9px;
+    color: rgba(255,215,0,0.55);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+
+
+
+
+.fans-section {
+    background-color: #1a1a2e;
+    padding: 80px 100px;
+}
+
+.fans-section h1 { color: white; }
+.fans-section .section-sub { color: rgba(255,255,255,0.55); }
+
+.fans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.fans-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid rgba(255,215,0,0.2);
+    display: block;
+    filter: brightness(0.85) saturate(0.95);
+    transition: transform 0.4s ease, filter 0.4s ease, border-color 0.3s ease;
+}
+
+.fans-grid img:hover {
+    transform: scale(1.04);
+    filter: brightness(1) saturate(1.2);
+    border-color: #FFD700;
+}
+
+
+
+
+
+footer {
+    background: linear-gradient(135deg, #0d0d1e, #1a1a2e);
+    text-align: center;
+    padding: 28px 40px;
+    border-top: 3px solid #E02C6D;
+}
+
+footer p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 1px;
+}
+
+footer p i {
+    margin: 0 4px;
+    color: #FFD700;
+}
